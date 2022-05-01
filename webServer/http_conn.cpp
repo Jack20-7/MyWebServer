@@ -103,7 +103,7 @@ void http_conn::init()
     m_content_idx=0;
     m_cgi_content_idx=0;
     query_string=0;
-    m_cgi==0;
+    m_cgi=0;
 
     memset(m_read_buf,0,READ_BUFFER_SIZE);
     memset(m_write_buf,0,WRITE_BUFFER_SIZE);
