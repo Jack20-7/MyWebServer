@@ -74,7 +74,7 @@ void http_conn::init(int sockfd,sockaddr_in & addr)
 {
    m_sockfd=sockfd;
    m_address=addr;
-   //下面两行用于调试，避免TIME_WAIT状态，使用市应该注释掉
+   //下面两行用于调试
    int reuse=1;
    setsockopt(m_sockfd,SOL_SOCKET,SO_REUSEADDR,&reuse,sizeof(reuse));
 
